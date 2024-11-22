@@ -284,6 +284,10 @@ var invest_game = {
   },
   on_finish: function(data) { 
     handle_invest_respond(data)
+    if (invest_round === 15) {
+      pickImg.shift();
+      console.log("在陣列中移除第一張照片，這應該只會發生一次")
+    }
   },
   stimulus:function(){
     return `<h1>您選擇投資多少錢？</h1> <img src="`+ pickImg[0] + `" alt="如果您看見這段文字就代表您的瀏覽器不支援圖片顯示或是網速過慢，此問題請盡快聯繫實驗者" width="500"> <p>請移動滑桿選擇數值並點擊以完成投資確認</p> `;
@@ -882,6 +886,7 @@ function verifyToken(token_input) {
       return false;
     }
     // 2.字元集
+    
     if (!validChars.test(first64) || !validChars.test(last64)) {
       console.error("token非法的字元集")
       return false;
