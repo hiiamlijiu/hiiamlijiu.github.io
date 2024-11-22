@@ -284,7 +284,7 @@ var invest_game = {
   },
   on_finish: function(data) { 
     handle_invest_respond(data)
-    if (invest_round === 15) {
+    if (invest_round === 16) {
       pickImg.shift();
       console.log("在陣列中移除第一張照片，這應該只會發生一次")
     }
