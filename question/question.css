@@ -1,0 +1,222 @@
+
+.hide{
+    display: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.survey-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.notice , .instruction{
+    border-left: 4px solid #535e64;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: #f8f9fa;
+    font-size: 1em;
+    margin: 5px;
+    color: #666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+.radio-group {
+    display: flex;
+
+    gap: 10px;
+}
+
+hr {
+    border: none; /* 去掉預設的邊框樣式 */
+    margin: 50px;
+    height: 3px; /* 線條高度 */
+    background-color: #444; /* 顏色 */
+    border-radius: 5px; /* 圓角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 陰影 */
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none; /* for Safari */
+    width: 15px; /* 控制正方形大小 */
+    height: 15px;
+    background-color: #fff;
+    border: 2px solid #444; /* 外邊框顏色 */
+    border-radius: 3px; /* 將圓角半徑設為 3px, 讓它接近正方形 */
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 3px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none; /* for Safari */
+    width: 15px; /* 控制正方形大小 */
+    height: 15px;
+    background-color: #fff;
+    border: 2px solid #444; /* 外邊框顏色 */
+    border-radius: 3px; /* 將圓角半徑設為 3px, 讓它接近正方形 */
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+input[type="radio"]:checked {
+    background-color: #6b917f; /* 被選中後的顏色 */
+    border-color: #444; /* 被選中後邊框顏色 */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #6b917f; /* 被選中後的顏色 */
+    border-color: #444; /* 被選中後邊框顏色 */
+}
+
+.other-input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    resize: vertical;
+}
+
+input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 10px;
+    font-size: 0.9em;
+
+    border: 1px solid #ddd;
+    resize: vertical;
+}
+
+.suggest {
+    justify-items: center;
+    text-align: center;
+    color: #000000;
+    background-color: #ffdfe2;
+    border-color: #ffdede;
+    width:100%;
+    /*border: 1px dashed #ffebeb;*/
+
+}
+
+
+
+.option-list{
+    padding: 10px;
+    margin: 10px;
+}
+
+.title {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #394d5a;
+    font-weight: bold;
+}
+
+
+
+.form-group {
+    /*margin-bottom: 25px;*/
+    margin: 13px;
+    padding: 5px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.question-number {
+    color: #282e31;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.form-group label {
+    display: inline-block;
+    margin: 8px 15px 8px 0;
+    cursor: pointer;
+}
+
+
+
+
+.radio-group {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.radio-group label {
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+
+/* 新增提交按鈕相關樣式 */
+.button-group {
+    margin-top: 40px;
+    text-align: center;
+    justify-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.submit-btn {
+    background-color: #4B7B6F;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(52,152,219,0.2);
+}
+
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(52,152,219,0.2);
+}
+
+h3{
+    padding: 10px;
+}

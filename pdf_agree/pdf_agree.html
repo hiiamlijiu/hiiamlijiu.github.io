@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同意書</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <link rel="stylesheet" href="pdf_agree.css"><!-- 引用外部 css 文件 -->
+</head>
+<body>
+    <h1>同意書</h1>
+    
+    <!-- PDF 顯示區域 -->
+    <div id="pdf-container">
+        <div id="pdf-controls">
+            <button id="prev">上一頁</button>
+            <span id="page-num"></span>
+            <button id="next">下一頁</button>
+            <button id="download-btn">下載同意書</button>
+        </div>
+        <canvas id="pdf-viewer"></canvas>
+    </div>
+    
+    <!-- 同意區段 -->
+    <div class="consent-section">
+        <h2>請確認以下事項</h2>
+        <div class="checkbox-container">
+            <input type="checkbox" id="consent-checkbox" onchange="updateSubmitButton()">
+            <label for="consent-checkbox">我已閱讀並同意以上所有條款</label>
+        </div>
+        <div class="error-message" id="error-message">請先閱讀並同意所有條款</div>
+        <button id="submit-button" onclick="submitForm()" disabled>確認送出</button>
+    </div>
+    <script src="pdf_agree.js"></script> <!-- 引用外部 JavaScript 文件 -->
+</body>
+</html>

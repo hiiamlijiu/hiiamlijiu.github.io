@@ -1,0 +1,42 @@
+  .hide {
+    display: none;
+  }
+  .fade-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .header {
+    margin-top: 1em;
+    text-align: center;
+    border: 3px dashed #ccc;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+
+  .options {
+    width: 600px; /* 與 dialog-box 相同寬度 */
+    margin: 0 auto; /* 水平置中 */
+    padding: 0 20px; /* 與 dialog-box 內邊距相同 */
+    box-sizing: border-box;
+    text-align: left; /* 文字靠左對齊 */
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px; /* 選項之間的間距 */
+  }
+  
+  label {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .pink {
+    background-color: #a44457;
+  }
+
+  .green {
+      background-color: #6b917f;
+  }

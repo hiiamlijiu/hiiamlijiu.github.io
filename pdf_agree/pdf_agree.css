@@ -1,0 +1,50 @@
+
+
+
+#pdf-viewer {
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: red;
+    display: none;
+    margin-top: 10px;
+}
+
+#pdf-controls {
+    text-align: center;
+    margin: 10px 0;
+    user-select: none;
+}
+
+#pdf-controls button {
+    margin: 0 5px;
+    background-color: #444;
+}
+
+#download-btn {
+    background-color: #1a73e8;
+}
+
+#page-num {
+    margin: 0 10px;
+    color: white;
+}
